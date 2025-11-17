@@ -56,7 +56,7 @@ public class MMQ {
         }
     }
 
-    // Mostra a tabela (não é algo bonito, mas está funcional :/  )
+    // Mostra a tabela (não é algo bonito, mas está funcional :/ )
     private void showTable() {
 
         System.out.print("X  ||  ");
