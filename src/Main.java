@@ -10,15 +10,20 @@ public class Main {
         System.out.println("||--------- CALCULO ---------");
         System.out.println("||--- Nada feito (ainda)");
         System.out.println("||------- ESTATISTICA -------");
-        System.out.println("|| -- [1] -> MMQ\n");
+        System.out.println("|| -- [1] -> Distribuição de Frequência");
+        System.out.println("|| -- [2] -> MMQ\n");
 
         System.out.print("O que você precisa calcular? ");
         int x = sc.nextInt();
 
         switch (x) {
             case 1:
+                System.out.print("Quantos n°s tem a tabela primitiva?");
+                new DistribuicaoDeFrequencia(sc.nextInt());
+                break;
+            case 2:
                 System.out.print("Qual o valor de n? ");
-                MMQ mmq = new MMQ(sc.nextInt());
+                new MMQ(sc.nextInt());
                 break;
                 default:
                     System.out.println("[ERROR] --- Input Inválido");
